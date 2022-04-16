@@ -9,7 +9,7 @@ describe('APIs Test',()=>{
     })
 
     it('GET /healthz --> returns content-type as JSON',() => {
-        return request(app).get('/healthz').expect('Content-Type','application/json; charset=utf-8')
+        return request(app).get('/healthz').expect('Content-Type','application/json;')
 
     })
 })
