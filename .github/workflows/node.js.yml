@@ -47,6 +47,7 @@ jobs:
 
 
   build:
+    name: APItests
 
     runs-on: ubuntu-latest
 
