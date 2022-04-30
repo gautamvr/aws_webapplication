@@ -9,7 +9,8 @@ curl -sL https://rpm.nodesource.com/setup_14.x | sudo -E bash -
 sudo yum install -y nodejs
 
 sudo yum install unzip -y
-cd ~/ && unzip webapplication.zip
+cd ~/ && mkdir webapplication
+unzip webapplication.zip -d webapplication
 cd ~/webapplication && npm ci
 
 sudo mv /tmp/webapp.service /etc/systemd/system/webapp.service
