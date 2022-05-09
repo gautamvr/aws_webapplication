@@ -2,28 +2,29 @@
   "name": "webapplication",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "test": "jest",
-    "dev-test":"jest --watchAll",
-    "dev-start": "nodemon app.js",
-    "start":"node app.js"
-
+    "dev-test": "jest --watchAll",
+    "dev-start": "nodemon server.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gautamvr/webapplication.git"
+    "url": "git+https://github.com/gautamvr/aws_webapplication.git"
   },
   "author": "Gautam VR",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gautamvr/webapplication/issues"
+    "url": "https://github.com/gautamvr/aws_webapplication/issues"
   },
-  "homepage": "https://github.com/gautamvr/webapplication#readme",
+  "homepage": "https://github.com/gautamvr/aws_webapplication#readme",
   "dependencies": {
     "express": "^4.17.3",
     "jest": "^27.5.1",
-    "nodemon": "^2.0.15",
     "supertest": "^6.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
   }
 }

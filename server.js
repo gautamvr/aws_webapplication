@@ -1,11 +1,14 @@
-const express = require('express');
+const express = require("express")
 
 const app = express();
+const postsRoute = require("./routes/posts")
 
-app.get('/healthz',function(req,res){
-    res.contentType('application/json');
-    res.statusCode = 200;
-    res.send();
+const PORT = 8080;
+
+app.use('/',postsRoute);
+
+app.listen(PORT,()=>{
+    console.log(`Started Listening on port ${PORT}`);
 })
 
-module.exports = app;
+module.exports = app
