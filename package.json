@@ -20,9 +20,11 @@
   },
   "homepage": "https://github.com/gautamvr/aws_webapplication#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "dotenv": "^16.0.1",
     "express": "^4.17.3",
     "jest": "^27.5.1",
+    "jsonwebtoken": "^8.5.1",
     "mysql": "^2.18.1",
     "supertest": "^6.2.2"
   },
